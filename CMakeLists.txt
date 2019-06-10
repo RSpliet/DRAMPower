@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(DRAMPOWER_XML_PATH share/xml/drampower CACHE PATH
 	"Path to the directory to install XML timing/power files to.")
-add_compile_options(-DXML_PATH=${CMAKE_INSTALL_PREFIX}${DRAMPOWER_XML_PATH})
+add_compile_options(-DXML_PATH="${CMAKE_INSTALL_PREFIX}/${DRAMPOWER_XML_PATH}")
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 

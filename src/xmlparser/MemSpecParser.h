@@ -55,6 +55,7 @@ class MemSpecParser : public XMLHandler {
 
   MemorySpecification        getMemorySpecification();
   static MemorySpecification getMemSpecFromXML(const std::string& id);
+  static const std::string getDefaultXMLPath();
 
  private:
   MemorySpecification memorySpecification;

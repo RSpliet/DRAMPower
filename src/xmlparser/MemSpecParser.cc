@@ -104,3 +104,9 @@ MemorySpecification MemSpecParser::getMemSpecFromXML(const string& id)
 
   return memSpecParser.getMemorySpecification();
 }
+
+const std::string
+MemSpecParser::getDefaultXMLPath()
+{
+	return XML_PATH;
+}
