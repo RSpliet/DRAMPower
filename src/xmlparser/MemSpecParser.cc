@@ -99,7 +99,7 @@ MemorySpecification MemSpecParser::getMemSpecFromXML(const string& id)
 {
   MemSpecParser memSpecParser;
 
-  cout << "* Parsing " << id << endl;
+  //cout << "* Parsing " << id << endl;
   XMLParser::parse(id, &memSpecParser);
 
   return memSpecParser.getMemorySpecification();
